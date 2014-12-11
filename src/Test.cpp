@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : ComputeDB.cpp
+// Name        : Test.cpp
 // Author      : Luca Baroffio
 // Version     :
 // Copyright   : Your copyright notice
