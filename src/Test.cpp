@@ -22,7 +22,7 @@ using namespace std;
 
 using namespace cv;
 
-// descriptor size, should be equal to {512, 256, 128, 64}
+// descriptor size, should be equal to {512, 256, 192, 128, 96, 64}
 const int DSIZE = 512;
 
 int main() {
@@ -81,6 +81,8 @@ int main() {
 			matches_post_RANSAC.push_back(good_matches[i]);
 		}
 	}
+
+	std::cout << cur_n_matches << " matches found!" << std::endl;
 
 	Mat img_matches;
 	drawMatches( img_object, keypoints_object, img_scene, keypoints_scene,

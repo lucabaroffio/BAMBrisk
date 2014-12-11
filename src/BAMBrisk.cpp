@@ -14,7 +14,7 @@ using namespace cv;
 
 BAMBriskDescriptorExtractor::BAMBriskDescriptorExtractor(int dsize, bool rotationInvariant, bool scaleInvariant, float patternScale){
 
-	assert((dsize == 512)||(dsize == 256)||(dsize == 128)||(dsize == 64));
+	assert((dsize == 512)||(dsize == 256)||(dsize == 192)||(dsize == 128)||(dsize==96)||(dsize == 64));
 	_scaleInvariance = scaleInvariant;
 	_rotationInvariance = rotationInvariant;
 
