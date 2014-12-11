@@ -1,7 +1,7 @@
 BAMBrisk - Binary AsyMmetric Boosted BRISK
 
 
-<a href="http://home.deib.polimi.it/tagliasa/publications/2014/2014_ICIP_Tagliasacchi_1.pdf">L. Baroffio, M. Cesana, A. Redondi, and M. Tagliasacchi, “BAMBOO: a fast descriptor based on asymmetric pairwise boosting,” in IEEE international conference on image processing (ICIP), 2014. </a>
+<a href="http://home.deib.polimi.it/tagliasa/publications/2014/2014_ICIP_Tagliasacchi_1.pdf" target="_blank">L. Baroffio, M. Cesana, A. Redondi, and M. Tagliasacchi, “BAMBOO: a fast descriptor based on asymmetric pairwise boosting,” in IEEE international conference on image processing (ICIP), 2014. </a>
 
 ```bibtex
 @inproceedings{baroffio:2014:ICIP:BAMBOO,
