@@ -13,7 +13,7 @@ Compilation instructions:
 
 How to run BRISK detector and extract BAMBrisk features:
 
-```C++
+```
 	
 	#include "BAMBrisk.h"
 	#include "brisk/brisk.h"
@@ -21,21 +21,27 @@ How to run BRISK detector and extract BAMBrisk features:
 	#include <opencv2/core/core.hpp>
 	#include <opencv2/features2d/features2d.hpp>
 	#include <opencv2/imgproc/imgproc.hpp>
+	
+	int main() {
 
-	cv::BriskFeatureDetector det(60, 4);
-	cv::BAMBriskDescriptorExtractor ext();
+		cv::BriskFeatureDetector det(60, 4);
+		cv::BAMBriskDescriptorExtractor ext();
 
-	Mat img = cv::imread( "image.jpg", CV_LOAD_IMAGE_GRAYSCALE );
+		Mat img = cv::imread( "image.jpg", CV_LOAD_IMAGE_GRAYSCALE );
 
-	if( !img.data)
-	{ std::cout<< " --(!) Error reading image " << std::endl; return -1; }
+		if( !img.data){ 
+			std::cout<< " --(!) Error reading image " << std::endl; 
+			return -1; 
+		}
 
-	std::vector<KeyPoint> keypoints;
+		std::vector<KeyPoint> keypoints;
 
-	det.detect( img, keypoints );
+		det.detect( img, keypoints );
 
-	Mat descriptors;
+		Mat descriptors;
 
-	ext.compute( img, keypoints, descriptors );
+		ext.compute( img, keypoints, descriptors );
+	
+	}
 	
 ```
