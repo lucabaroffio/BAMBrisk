@@ -13,7 +13,7 @@ Compilation instructions:
 
 How to run BRISK detector and extract BAMBrisk features:
 
-```
+```C
 	
 	#include "BAMBrisk.h"
 	#include "brisk/brisk.h"
