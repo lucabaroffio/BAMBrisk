@@ -40,6 +40,8 @@ How to run BRISK detector and extract BAMBrisk features:
 	    int main() {
 
 	        cv::BriskFeatureDetector det(60, 4);
+	
+			// descriptor size, should be equal to {512, 256, 192, 128, 96, 64}
 	        cv::BAMBriskDescriptorExtractor ext(512);
 
 	        Mat img = cv::imread( "scene.jpg", CV_LOAD_IMAGE_GRAYSCALE );
